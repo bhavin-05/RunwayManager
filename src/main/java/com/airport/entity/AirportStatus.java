@@ -50,6 +50,7 @@ public class AirportStatus {
 				String id = iter.next();
 				RunwayRequest req = inflight.get(id);
 				if(req != null) {
+					//result+=req.airplaneId; // to only have one runway test
 					result+="flight " + req.airplaneId + " runway " + id + " ";
 				}
 			}

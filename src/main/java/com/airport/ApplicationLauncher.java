@@ -31,7 +31,7 @@ public class ApplicationLauncher {
 		// Listen to console for commands
 		readInput();
 
-		// shutdown executor if terminate received
+		// TODO clean - shutdown executor if terminate received
 		shutDown();
 
 		

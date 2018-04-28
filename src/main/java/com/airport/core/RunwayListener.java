@@ -20,7 +20,7 @@ public class RunwayListener implements Runnable {
 		
 		while(true) {
 			try {
-				// do not process more requests 
+				// TODO implement clean shutdown
 				if(shutdown) break;
 				
 				// blocking call
