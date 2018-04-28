@@ -12,6 +12,7 @@ public class HandlerFactory {
 		handlerMap.put("land", new LandingHandler());
 		handlerMap.put("status", new StatusHandler());
 		handlerMap.put("priority", new PriorityChangeHandler());
+		handlerMap.put("deletetakeoff", new DeleteTakeoffHandler());
 	}
 	
 	public static RunwayRequesttHandler getHandler(String command) {

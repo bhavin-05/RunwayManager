@@ -36,6 +36,14 @@ public class AirportManager {
 		pendingRunwayRequests.add(new RunwayRequest(id,RunwayRequestType.TAKEOFF,System.nanoTime()));
 		return pendingRunwayRequests.size();
 	}
+	
+	public String deleteTakeOffRequest(String id) {
+		RunwayRequest req = new RunwayRequest(id,RunwayRequestType.TAKEOFF,System.nanoTime());
+
+		boolean deleted = pendingRunwayRequests.remove(req);
+		return deleted?"Success":"Fail";
+	}
+
 	public int createLandingRequest(String id) {
 		pendingRunwayRequests.add(new RunwayRequest(id,RunwayRequestType.LAND,System.nanoTime()));
 		return pendingRunwayRequests.size();

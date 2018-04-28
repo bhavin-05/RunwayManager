@@ -1,6 +1,7 @@
 package com.airport.rest;
 
 
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
@@ -53,6 +54,15 @@ public class RunwayResource {
     @Produces(MediaType.TEXT_PLAIN)
     public String takeoff(@PathParam("id") String id) {
     	RunwayRequesttHandler handler = HandlerFactory.getHandler("takeoff");
+    	return handler.processRequest(null,id);
+    	
+    }
+    
+    @DELETE
+    @Path("takeoff/airplane/{id}")
+    @Produces(MediaType.TEXT_PLAIN)
+    public String deleteTakeoff(@PathParam("id") String id) {
+    	RunwayRequesttHandler handler = HandlerFactory.getHandler("deletetakeoff");
     	return handler.processRequest(null,id);
     	
     }

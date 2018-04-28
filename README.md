@@ -25,8 +25,11 @@ POST /v1/api/runway/1
 ### Landing
 POST /v1/api/landing/airplane/10
 
-### Takeoff
+### Takeoff \ Delete Takeoff
 POST /v1/api/takeoff/airplane/11
+
+DELETE /v1/api/takeoff/airplane/11
+
 
 ### Status
 GET  /v1/api/status
