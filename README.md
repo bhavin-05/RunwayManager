@@ -33,6 +33,7 @@ GET  /v1/api/status
 
 ### Priority Change
 POST  /v1/api/landing/airplane/10/0     ---- performs PATCH
+
 POST  /v1/api/takeoff/airplane/10/0		  ---- performs PATCH		
 
 
