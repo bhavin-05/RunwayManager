@@ -44,3 +44,6 @@ POST  /v1/api/landing/airplane/10/0     ---- performs PATCH
 POST  /v1/api/takeoff/airplane/10/0		  ---- performs PATCH		
 
 
+
+# Design
+https://drive.google.com/file/d/1B_YXlGGlv0u0zkPicTLCWlMOrIFWxfP0/view?usp=sharing
