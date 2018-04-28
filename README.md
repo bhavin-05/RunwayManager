@@ -9,6 +9,7 @@ mvn clean install
 
 ## Start Application
 cd RunwayManager
+
 java -jar ./target/RunwayManager-0.0.1-SNAPSHOT.jar
 
 ## Command Line Instructions
