@@ -1,7 +1,10 @@
 # Runway Manager
 
 ## Build
+git clone git@github.com:bhavin-05/RunwayManager.git
+
 cd RunwayManager
+
 mvn clean install
 
 ## Start Application
