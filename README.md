@@ -1,11 +1,15 @@
 # Runway Manager
 
 ## Build
+git clone git@github.com:bhavin-05/RunwayManager.git
+
 cd RunwayManager
+
 mvn clean install
 
 ## Start Application
 cd RunwayManager
+
 java -jar ./target/RunwayManager-0.0.1-SNAPSHOT.jar
 
 ## Command Line Instructions
